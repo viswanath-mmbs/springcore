@@ -12,5 +12,9 @@
     <!-- to enable annotation support -->
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
     <!-- end to enable annotation support -->
+    
+    <!-- to enable annotation support all the annotations -->
+    <context:annotation-config></context:annotation-config>
+    <!-- end to enable annotation support all the annotations -->
 
 </beans>
