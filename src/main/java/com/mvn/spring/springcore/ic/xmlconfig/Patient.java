@@ -1,4 +1,4 @@
-package com.mvn.spring.springcore.Ic;
+package com.mvn.spring.springcore.ic.xmlconfig;
 
 public class Patient {
 	

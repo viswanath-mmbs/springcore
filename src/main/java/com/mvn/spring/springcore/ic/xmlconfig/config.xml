@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <bean name="patient" class="com.mvn.spring.springcore.Ic.Patient" p:id="1" init-method="hi" destroy-method="buy">
+    <bean name="patient" class="com.mvn.spring.springcore.ic.xmlconfig.Patient" p:id="1" init-method="hi" destroy-method="buy">
     </bean>
 
 </beans>
