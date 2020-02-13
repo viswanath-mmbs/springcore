@@ -7,7 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <bean name="employee" class="com.mvn.spring.springcore.innerBean.Employee" p:id="1">
+    <!-- default scope is singleton -->
+    <bean name="employee" class="com.mvn.spring.springcore.innerBean.Employee" p:id="1" scope="singleton">
     	<property name="address">
     		<bean class="com.mvn.spring.springcore.innerBean.Address" p:hno="19" p:street="mvn" p:city="mkr">
     		</bean>
