@@ -2,11 +2,11 @@ package com.mvn.spring.springcore.session9.advanced.autowiringByAnnotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.mvn.spring.springcore.session9.advanced.autowiringByConstructor.Address;
+import com.mvn.spring.springcore.session9.advanced.autowiringByAnnotations.Address;
 
 public class Employee {
 
-//	@Autowired  // not working
+//	@Autowired  
 	public Employee(Address address) {
 		this.address = address;
 	}
