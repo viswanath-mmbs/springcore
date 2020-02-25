@@ -12,7 +12,7 @@
     <bean name="myDao" class="com.mvn.spring.springcore.session8.propertyplaceholder.MyDao">
     	<constructor-arg value="${dbsServer}"></constructor-arg>
     	<!-- <constructor-arg value="${dbsServer}"></constructor-arg> 
-    	
+
     		 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'myDao' defined in class path resource [com/mvn/spring/springcore/session8/propertyplaceholder/config.xml]: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"
 			Exception in thread "main" org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'myDao' defined in class path resource [com/mvn/spring/springcore/session8/propertyplaceholder/config.xml]: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"
     	-->
