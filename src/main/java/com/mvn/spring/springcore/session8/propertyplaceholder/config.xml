@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:property-placeholder location="com/mvn/spring/springcore/session8/propertyplaceholder/database.properties"/>
+    <bean name="myDao" class="com.mvn.spring.springcore.session8.propertyplaceholder.MyDao">
+    	<constructor-arg value="${dbsServer}"></constructor-arg>
+    	<!-- <constructor-arg value="${dbsServer}"></constructor-arg> 
+    	
+    		 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'myDao' defined in class path resource [com/mvn/spring/springcore/session8/propertyplaceholder/config.xml]: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"
+			Exception in thread "main" org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'myDao' defined in class path resource [com/mvn/spring/springcore/session8/propertyplaceholder/config.xml]: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'dbsServer' in string value "${dbsServer}"
+    	-->
+    </bean>
+    
+</beans>
