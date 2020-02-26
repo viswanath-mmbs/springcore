@@ -1,5 +1,6 @@
 package com.mvn.spring.springcore.session11.sterioTypeAnnotation;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -8,8 +9,10 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Instructor {
 
+	@Value("9") // to assign value using annotation @Value
 	private int id;
 	
+	@Value("mvn")
 	private String name;
 
 	public int getId() {

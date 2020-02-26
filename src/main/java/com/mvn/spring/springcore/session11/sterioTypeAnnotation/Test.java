@@ -10,10 +10,10 @@ public class Test {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
 				"com/mvn/spring/springcore/session11/sterioTypeAnnotation/config.xml");
 		Instructor i = (Instructor)ctx.getBean("inst");
-		System.out.println(i.hashCode());
+		System.out.println(i);
 		
 		Instructor i2 = (Instructor)ctx.getBean("inst");
-		System.out.println(i2.hashCode());
+		System.out.println(i2);
 	}
 
 }

@@ -9,3 +9,5 @@ Sterio type annotation
 Scopes using annotations :
 
 default : singleton
+=======
+	@Scope("prototype")
