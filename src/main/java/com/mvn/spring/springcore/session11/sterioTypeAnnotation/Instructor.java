@@ -1,5 +1,7 @@
 package com.mvn.spring.springcore.session11.sterioTypeAnnotation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -14,6 +16,9 @@ public class Instructor {
 	
 	@Value("mvn")
 	private String name;
+	
+	@Value("#{topics}")
+	private List<String> topics;
 
 	public int getId() {
 		return id;
@@ -31,9 +36,17 @@ public class Instructor {
 		this.name = name;
 	}
 
+	public List<String> getTopics() {
+		return topics;
+	}
+
+	public void setTopics(List<String> topics) {
+		this.topics = topics;
+	}
+
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", name=" + name + "]";
+		return "Instructor [id=" + id + ", name=" + name + ", topics=" + topics + "]";
 	}
-	
+
 }
