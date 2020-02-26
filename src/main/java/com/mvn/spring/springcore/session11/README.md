@@ -13,3 +13,14 @@ default : singleton
 	@Scope("prototype")
 
 	@Value("9") // to assign value using annotation @Value
+	
+	@Value("#{topics}") spring expression language 
+		to inject collection to a bean using @Value annotation from config as below
+	
+		<util:list list-class="java.util.LinkedList" id="topics">
+	    	<value>Java</value>
+	    	<value>Springboot</value>
+	    </util:list>
+    
+    
+    
