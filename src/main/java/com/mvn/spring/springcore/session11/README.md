@@ -21,6 +21,8 @@ default : singleton
 	    	<value>Java</value>
 	    	<value>Springboot</value>
 	    </util:list>
+	    
+	@Autowired to inject reference type to a bean
     
     
     
