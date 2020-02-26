@@ -11,10 +11,12 @@
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd">
     
-    <bean class="com.mvn.spring.springcore.session13.injectInterface.OrderDAOImpl" name="dao">
-    </bean>
+    <bean class="com.mvn.spring.springcore.session13.injectInterface.OrderDAOImpl" name="dao"></bean>
+    
+    <bean class="com.mvn.spring.springcore.session13.injectInterface.OrderDAOImpl2" name="dao2"></bean>
+    
     <bean class="com.mvn.spring.springcore.session13.injectInterface.OrderBOImpl" name="bo">
-    	<property name="dao" ref = "dao"></property>
+    	<property name="dao" ref = "dao2"></property>
     </bean>
     
     
